@@ -18,7 +18,6 @@ This request accepts the below query string parameters to add additional options
 | Amount | Amount of the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | BalanceDue | Balance remaining on the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | CurrencyCode | Payment currency code | [String](../QueryFilter.md#string) |
-| CustomerId | Customer number | [String](../QueryFilter.md#string) |
 | DueOn | Search by the due on date within a specified interval | [Date Range Filter](../QueryFilter.md#date-range-filter) |
 | FeeDebitMemoEnabled | Search by if the invoice has a fee | [Boolean](../QueryFilter.md#boolean) |
 | FeeDebitMemoPrefix | Search by the fee pre fix | [String](../QueryFilter.md#string) |
@@ -32,7 +31,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding/currencies?filter.criteria.CustomerId=Nodus0001
+	GET /invoices/outstanding/currencies?filter.criteria.invoiceId.contains=STDINV
 </pre>
 
 ###### Response
@@ -278,7 +277,6 @@ This request accepts the below query string parameters to add additional options
 | Amount | Amount of the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | BalanceDue | Balance remaining on the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | CurrencyCode | Payment currency code | [String](../QueryFilter.md#string) |
-| CustomerId | Customer number | [String](../QueryFilter.md#string) |
 | DueOn | Search by the due on date within a specified interval | [Date Range Filter](../QueryFilter.md#date-range-filter) |
 | FeeDebitMemoEnabled | Search by if the invoice has a fee | [Boolean](../QueryFilter.md#boolean) |
 | FeeDebitMemoPrefix | Search by the fee pre fix | [String](../QueryFilter.md#string) |
@@ -292,7 +290,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId=Nodus0001
+	GET /invoices/outstanding?filter.pageSize=10&filter.pageIndex=0&filter.criteria.invoiceId.contains=STDINV
 </pre>
 
 ###### Response
@@ -381,7 +379,6 @@ This request accepts the below query string parameters to add additional options
 | Amount | Amount of the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | BalanceDue | Balance remaining on the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | CurrencyCode | Payment currency code | [String](../QueryFilter.md#string) |
-| CustomerId | Customer number | [String](../QueryFilter.md#string) |
 | DueOn | Search by the due on date within a specified interval | [Date Range Filter](../QueryFilter.md#date-range-filter) |
 | FeeDebitMemoEnabled | Search by if the invoice has a fee | [Boolean](../QueryFilter.md#boolean) |
 | FeeDebitMemoPrefix | Search by the fee pre fix | [String](../QueryFilter.md#string) |
@@ -395,7 +392,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding/allselected?filter.criteria.CustomerId=Nodus0001
+	GET /invoices/outstanding/allselected?filter.criteria.invoiceId.contains=STDINV
 </pre>
 
 ###### Response
@@ -432,7 +429,6 @@ This request accepts the below query string parameters to add additional options
 | Amount | Amount of the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | BalanceDue | Balance remaining on the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | CurrencyCode | Payment currency code | [String](../QueryFilter.md#string) |
-| CustomerId | Customer number | [String](../QueryFilter.md#string) |
 | DueOn | Search by the due on date within a specified interval | [Date Range Filter](../QueryFilter.md#date-range-filter) |
 | FeeDebitMemoEnabled | Search by if the invoice has a fee | [Boolean](../QueryFilter.md#boolean) |
 | FeeDebitMemoPrefix | Search by the fee pre fix | [String](../QueryFilter.md#string) |
@@ -446,7 +442,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding/export?filter.criteria.CustomerId=Nodus0001
+	GET /invoices/outstanding/export?filter.criteria.invoiceId.contains=STDINV
 </pre>
 
 ###### Response
@@ -478,7 +474,6 @@ This request accepts the below query string parameters to add additional options
 | Amount | Amount of the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | BalanceDue | Balance remaining on the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | CurrencyCode | Payment currency code | [String](../QueryFilter.md#string) |
-| CustomerId | Customer number | [String](../QueryFilter.md#string) |
 | DueOn | Search by the due on date within a specified interval | [Date Range Filter](../QueryFilter.md#date-range-filter) |
 | FeeDebitMemoEnabled | Search by if the invoice has a fee | [Boolean](../QueryFilter.md#boolean) |
 | FeeDebitMemoPrefix | Search by the fee pre fix | [String](../QueryFilter.md#string) |
@@ -492,7 +487,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/paid?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId=Nodus0001
+	GET /invoices/paid?filter.pageSize=10&filter.pageIndex=0&filter.criteria.invoiceId.contains=STDINV
 </pre>
 
 ###### Response
@@ -561,7 +556,6 @@ This request accepts the below query string parameters to add additional options
 | Amount | Amount of the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | BalanceDue | Balance remaining on the invoices | [Number Range Filter](../QueryFilter.md#number-range-filter) |
 | CurrencyCode | Payment currency code | [String](../QueryFilter.md#string) |
-| CustomerId | Customer number | [String](../QueryFilter.md#string) |
 | DueOn | Search by the due on date within a specified interval | [Date Range Filter](../QueryFilter.md#date-range-filter) |
 | FeeDebitMemoEnabled | Search by if the invoice has a fee | [Boolean](../QueryFilter.md#boolean) |
 | FeeDebitMemoPrefix | Search by the fee pre fix | [String](../QueryFilter.md#string) |
@@ -575,7 +569,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/pastdue?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId=Nodus0001
+	GET /invoices/pastdue?filter.pageSize=10&filter.pageIndex=0&filter.criteria.invoiceId.contains=STDINV
 </pre>
 
 ###### Response
