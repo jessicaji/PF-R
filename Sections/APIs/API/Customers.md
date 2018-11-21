@@ -49,12 +49,8 @@ Retrieve the current customer
         "EMail": "",
         "Fax": "",
         "Name": "Dennis Swenson",
-        "Phone1": null,
-        "Phone2": null,
-        "Phone3": null,
+        "Phone": null,
         "State": "MN",
-        "UserDefine1": null,
-        "UserDefine2": null,
         "Zip": "55304-9840"
     },
     "PrimaryAddress": {
@@ -66,12 +62,8 @@ Retrieve the current customer
         "EMail": "",
         "Fax": "",
         "Name": "Dennis Swenson",
-        "Phone1": null,
-        "Phone2": null,
-        "Phone3": null,
+        "Phone": null,
         "State": "MN",
-        "UserDefine1": null,
-        "UserDefine2": null,
         "Zip": "55304-9840"
     },
     "ShippingAddress": {
@@ -83,12 +75,8 @@ Retrieve the current customer
         "EMail": "",
         "Fax": "",
         "Name": "Dennis Swenson",
-        "Phone1": null,
-        "Phone2": null,
-        "Phone3": null,
+        "Phone": null,
         "State": "MN",
-        "UserDefine1": null,
-        "UserDefine2": null,
         "Zip": "55304-9840"
     },
     "CreditBalance": 0,
