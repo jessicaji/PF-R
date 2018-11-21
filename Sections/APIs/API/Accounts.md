@@ -27,7 +27,7 @@ This api requires authentication
 For more information and descriptions on available fields please see our [object reference](../../Objects/AccountUser.md#AccountUserResponse).
 
 
-Create a customer User
+Create a customer user
 --------------------
 
 * `POST /users` will create a user on the PayFabric Receivables website based on the JSON request payload.
@@ -52,7 +52,7 @@ Please note that **bold** fields are required fields, and all others are optiona
 </pre>
 
 
-Update a customer User
+Update a customer user
 --------------------
 This api requires authentication
 
@@ -166,7 +166,7 @@ Please note that **bold** fields are required fields, and all others are optiona
 Retrieve Registration Key
 --------------------
 
-* `POST /users/registration` will register a customer on the PayFabric Receivables website based on the JSON request payload.
+* `POST /users/registration` will register a customer on the PayFabric Receivables website based on the JSON request payload. If user has authentication, it will display Registration Key on the page, otherwise it will only send email when "SendEmail" is true.
 
 ###### Request
 <pre>
@@ -217,12 +217,12 @@ For more information and descriptions on response fields please see our [object 
 Send Reset Password Email
 --------------------
 
-* `POST /users/resetpassword` will send a reset password email from the PayFabric Receivables website based on the JSON request payload.
+* `POST /users/resetpassword` will send a reset password confirmation email from the PayFabric Receivables website based on the JSON request payload if the email template is enabled.
 
 ###### Request
 <pre>
 {
-	<b>"UserId": "d4c6ed39-6c85-4b01-accc-9d277e9e418f"</b>,
+	<b>"AccessCode": "d4c6ed39-6c85-4b01-accc-9d277e9e418f"</b>,
 	<b>"NewPassword": "password1"</b>
 }
 </pre>
