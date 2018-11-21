@@ -47,14 +47,13 @@ This request accepts the below query string parameters to add additional options
         {
             "Amount": 5873.79,
             "Currency": {
-				"Name": "USD",
+		"Name": "USD",
                 "CurrencyCode": "Z-US$",
                 "Symbol": "$",
                 "LongName": "US Dollars",
                 "IsFuncCurrency": true
             },
-			"OriginalDocumentId": "00000000-0000-0000-0000-000000000000",
-			"DocumentGuid": "00000000-0000-0000-0000-000000000000",
+	    "DocumentGuid": "00000000-0000-0000-0000-000000000000",
             "DocumentId": "ORDST1026",
             "DocumentType": "Invoice",
             "PONumber": "4567",
@@ -63,14 +62,13 @@ This request accepts the below query string parameters to add additional options
         {
             "Amount": 358.2,
             "Currency": {
-				"Name": "USD",
+		"Name": "USD",
                 "CurrencyCode": "Z-US$",
                 "Symbol": "$",
                 "LongName": "US Dollars",
                 "IsFuncCurrency": true
             },
-			"OriginalDocumentId": "00000000-0000-0000-0000-000000000001",
-			"DocumentGuid": "00000000-0000-0000-0000-000000000001",
+	    "DocumentGuid": "00000000-0000-0000-0000-000000000001",
             "DocumentId": "ORDST2095",
             "DocumentType": "Invoice",
             "PONumber": "4567",
