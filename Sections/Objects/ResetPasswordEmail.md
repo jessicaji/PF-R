@@ -3,6 +3,6 @@ The reset password email object represents sending a reset password email from t
 
 | Attribute | Data Type | Definition | Max Length |
 | :----------- | :--------- | :--------- | :--------- |
-| UserId\* | Guid | The customer's userId | uniqueidentifier |
+| AccessCode\* | Guid | The AccessCode to reset password | uniqueidentifier |
 | NewPassword\* | String | New password to be assigned | nvarchar(100) |
 \*Required
