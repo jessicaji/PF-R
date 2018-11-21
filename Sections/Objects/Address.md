@@ -15,13 +15,9 @@ This object is used when creating an address on the PayFabric Receivables websit
 | Country\* | String | Country name | nvarchar(50) |
 | EMailAddress\* | String | Email address | nvarchar(255) |
 | Fax\* | String | Fax number | nvarchar(50) |
-| Name\* | String | Customer name | nvarchar(50) |
-| Phone1 | String | Phone number line 1 | nvarchar(50) |
-| Phone2 | String | Phone number line 2 | nvarchar(21) |
-| Phone3 | String | Phone number line 3 | nvarchar(21) |
+| Name\* | String | Customer name | nvarchar(100) |
+| Phone | String | Phone number line 1 | nvarchar(50) |
 | State | String | State name | nvarchar(50) |
-| UserDefine1 | String | User-defined field 1. Developer can store additional data in this field. | nvarchar(255) |
-| UserDefine2 | String | User-defined field 2. Developer can store additional data in this field. | nvarchar(255) |
 | Zip | String | Zip code | nvarchar(50) |
 \*Required
 
@@ -39,10 +35,6 @@ This object is used when getting an address from the PayFabric Receivables websi
 | EMailAddress | String | Email address | nvarchar(255) |
 | Fax | String | Fax number | nvarchar(50) |
 | Name | String | Customer name | nvarchar(50) |
-| Phone1 | String | Phone number line 1 | nvarchar(50) |
-| Phone2 | String | Phone number line 2 | nvarchar(21) |
-| Phone3 | String | Phone number line 3 | nvarchar(21) |
+| Phone | String | Phone number line 1 | nvarchar(50) |
 | State | String | State name | nvarchar(50) |
-| UserDefine1 | String | User-defined field 1. Developer can store additional data in this field. | nvarchar(255) |
-| UserDefine2 | String | User-defined field 2. Developer can store additional data in this field. | nvarchar(255) |
 | Zip | String | Zip code | nvarchar(50) |
